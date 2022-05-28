@@ -1,0 +1,5 @@
+node_modules/
+data/
+.env
+food-shopping-app-23a32-firebase-adminsdk-11hrj-684560a62e.json
+package-lock.json

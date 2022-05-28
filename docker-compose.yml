@@ -1,0 +1,11 @@
+version: '3.9'
+services:
+  type-sense:
+    image: typesense/typesense:0.22.2
+    ports:
+      - 8108:8108
+    volumes:
+      - ./data:/data:rw
+    env_file:
+      - .env
+    command: "--data-dir /data --api-key=${TYPESENSE_API_KEY} --enable-cors"
