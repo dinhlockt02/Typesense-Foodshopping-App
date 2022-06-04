@@ -7,7 +7,7 @@ const { EATERIES_COLLECTION_NAME } = process.env;
 const client = new Typesense.Client({
   nodes: [
     {
-      host: 'localhost', // where xxx is the ClusterID of your Typesense Cloud cluster
+      host: process.env.TYPESENSE_HOST, // where xxx is the ClusterID of your Typesense Cloud cluster
       port: '8108',
       protocol: 'http',
     },
